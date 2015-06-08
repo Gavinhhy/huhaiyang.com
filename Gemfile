@@ -7,6 +7,8 @@ gem 'rails', '4.1.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
+gem 'jquery-ui-rails'
+gem "ckeditor"
 
 gem 'mysql2'
 # Use Uglifier as compressor for JavaScript assets
