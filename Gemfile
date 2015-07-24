@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 4.0.3'
 
 gem 'jquery-ui-rails'
 gem "ckeditor"
+gem 'carrierwave'
+gem 'mini_magick'
 
 gem 'mysql2'
 # Use Uglifier as compressor for JavaScript assets
