@@ -7,4 +7,6 @@
 //= require move-top.js
 //= require easing.js
 //= require circles.js
-
+//= require bootstrap.min
+//= require npm.js
+//= require_tree .

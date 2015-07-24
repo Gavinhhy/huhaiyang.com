@@ -1,5 +1,7 @@
 /*
  *= require my_style.css
- *= require bootstrap.min
+ *= require bootstrap.min.css
+ *= require bootstrap-theme
  *= require jquery.ui.all
+ *= require_tree .
  */
