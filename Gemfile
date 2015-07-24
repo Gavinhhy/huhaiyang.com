@@ -8,6 +8,7 @@ gem 'mysql2'
 # Use sqlite3 as the database for Active Recordl
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'json', '~> 1.8.3'
 
 gem 'jquery-ui-rails'
 gem "ckeditor"
