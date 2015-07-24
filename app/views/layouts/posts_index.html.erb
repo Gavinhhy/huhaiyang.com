@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>Blog</title>
 
     <!-- Bootstrap core CSS -->
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -30,24 +31,31 @@
   </head>
 
   <body>
-
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-        <a class="blog-nav-item active" href="#">Home</a>
-        <a class="blog-nav-item" href="#">New features</a>
-        <a class="blog-nav-item" href="#">Press</a>
-        <a class="blog-nav-item" href="#">New hires</a>
-        <a class="blog-nav-item" href="#">About</a>
-        </nav>
-      </div>
-    </div>
-
     <div class="container">
+      <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Haiyang Hu</a>
+                          </div>
+                          <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                              <li class="active"><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div><!--/.nav-collapse -->
+                        </div><!--/.container-fluid -->
+                        </nav>
 
       <div class="blog-header">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+        <h1 class="blog-title">一些笔记而已</h1>
+        <p class="lead blog-description">字写得不好，所以就用键盘来记录生活和工作的一些事情.</p>
       </div>
 
       <div class="row">
@@ -58,6 +66,7 @@
           <nav>
           <ul class="pager">
             <li><a href="#">Previous</a></li>
+            <li><a href="#">Top</a></li>
             <li><a href="#">Next</a></li>
           </ul>
           </nav>

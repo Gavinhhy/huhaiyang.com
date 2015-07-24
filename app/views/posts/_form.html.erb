@@ -1,0 +1,14 @@
+  <%= form_for @post  do |f| %>
+    <p>
+    <%= f.label :文章标题 %>
+    <%= f.text_field :title %>
+    </p>
+    <p>
+    <%= f.label :文章内容 %>
+    <%= f.cktext_area :content %>
+    </p>
+
+    <p>
+    <%= f.submit '提交', class: 'btn btn-primary' %>
+    </p>
+<% end %>
