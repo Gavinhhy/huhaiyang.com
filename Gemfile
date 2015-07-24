@@ -9,6 +9,7 @@ gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 gem 'json', '~> 1.8.3'
+gem 'coffee-script-source', '~> 1.8.0'
 
 gem 'jquery-ui-rails'
 gem "ckeditor"
