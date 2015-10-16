@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   layout 'posts_index'
 
   def index
-    @posts = Post.all
+    @posts = Post.order('updated_at DESC')
   end
 
   def new

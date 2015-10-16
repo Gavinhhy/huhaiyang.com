@@ -5,7 +5,8 @@
       <h2 class="blog-post-title" ><%= post.title%></h2>
       <p class="blog-post-meta"><%= post.created_at.strftime("%Y-%m-%d %H:%M:%S")%> by <a href="#">Gavin</a></p>
       <%#<p><%= truncate(post.content,:length=>330).gsub(/<.*?>/,'') %></p>
-      <p><%= sanitize post.content %></p>
+      <% content = post.content[0,150] %>
+      <p><%= sanitize content %></p>
       <%= link_to '查看', post_path(post)  , class: 'btn btn-default' %>
       </div>
     </div>

@@ -1,7 +1,6 @@
 // not includeea alskdflaf = require_tree .
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
 //= require jquery.anystretch.min
 //= require move-top.js
 //= require easing.js
