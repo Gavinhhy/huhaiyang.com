@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+
+  #简单加密一下，防止被人篡改
+  http_basic_authenticate_with name: "821222837@qq.com", password: "huhaiyang361010", except: [:index, :show]
+
   layout 'posts_index'
 
   def index

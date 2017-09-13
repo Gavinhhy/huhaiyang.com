@@ -1,6 +1,8 @@
 /*
  *= require my_style.css
- *= require bootstrap.min.css
+ *= require bootstrap
+ *= require bootstrap.min
  *= require bootstrap-theme
+ *= require post_template
  *= require_tree .
  */
