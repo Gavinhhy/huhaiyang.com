@@ -1,6 +1,7 @@
 // not includeea alskdflaf = require_tree .
 //= require jquery
 //= require jquery_ujs
+//= require kindeditor
 //= require jquery.anystretch.min
 //= require move-top.js
 //= require easing.js
@@ -8,4 +9,5 @@
 //= require bootstrap.min
 //= require npm.js
 //= require ckeditor/init
+//= require load_kindeditor.coffee
 //= require_tree .

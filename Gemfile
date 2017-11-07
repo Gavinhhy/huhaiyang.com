@@ -12,8 +12,9 @@ gem 'json', '~> 1.8.3'
 gem 'coffee-script-source', '~> 1.8.0'
 
 gem 'jquery-ui-rails'
-gem "ckeditor"
-gem 'carrierwave'
+gem "ckeditor", github: 'galetahub/ckeditor'
+#gem 'carrierwave'
+gem 'rails_kindeditor'
 gem 'mini_magick'
 
 gem 'bcrypt','~> 3.1.7'
@@ -21,6 +22,7 @@ gem 'bcrypt','~> 3.1.7'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
+gem 'simditor'
 
 gem 'jquery-rails'
 gem 'turbolinks'

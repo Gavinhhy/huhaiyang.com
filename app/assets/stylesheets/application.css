@@ -4,5 +4,6 @@
  *= require bootstrap.min
  *= require bootstrap-theme
  *= require post_template
+ *= require simditor
  *= require_tree .
  */

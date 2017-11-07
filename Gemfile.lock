@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 32bc0c6702388549cb4b3f00f82afbc3798d6891
+  specs:
+    ckeditor (4.2.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://ruby.taobao.org/
   specs:
@@ -41,13 +49,10 @@ GEM
     capistrano-rbenv (1.0.1)
       capistrano
       capistrano-platform-resources (>= 0.1.0)
-    carrierwave (1.1.0)
+    carrierwave (1.2.1)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
-    ckeditor (4.2.4)
-      cocaine
-      orm_adapter (~> 0.5.0)
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -104,6 +109,9 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.6)
       sprockets-rails (~> 2.0)
+    rails_kindeditor (0.5.0)
+      carrierwave
+      mini_magick
     railties (4.1.6)
       actionpack (= 4.1.6)
       activesupport (= 4.1.6)
@@ -120,6 +128,7 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simditor (2.3.6)
     spring (1.7.2)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -152,8 +161,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   capistrano (= 2.12.0)
   capistrano-rbenv (= 1.0.1)
-  carrierwave
-  ckeditor
+  ckeditor!
   coffee-rails (~> 4.0.0)
   coffee-script-source (~> 1.8.0)
   jbuilder (~> 2.0)
@@ -164,12 +172,14 @@ DEPENDENCIES
   mysql2 (= 0.3.20)
   net-ssh (= 2.7.0)
   rails (= 4.1.6)
+  rails_kindeditor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  simditor
   spring
   thin (= 1.6.2)
   turbolinks
   uglifier (>= 1.3.0)
 
 BUNDLED WITH
-   1.12.4
+   1.15.4
