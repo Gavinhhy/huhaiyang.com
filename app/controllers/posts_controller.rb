@@ -45,6 +45,10 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def last_post
+    @post = Post.last
+  end
+
 
   private
   def post_params
