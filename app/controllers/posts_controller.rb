@@ -6,7 +6,9 @@ class PostsController < ApplicationController
   layout 'posts_index'
 
   def index
-    @posts = Post.order('updated_at DESC')
+    #@posts = Post.order('updated_at DESC')
+    @posts = Post.order('updated_at DESC').page(params[:page]).per(10)
+
   end
 
   def new

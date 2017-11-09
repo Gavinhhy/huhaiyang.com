@@ -1,4 +1,5 @@
 <div class="blog-post">
+<%= paginate @posts %>
   <% @posts.each do |post| %>
     <div class="panel panel-default">
     <div class="panel-body">
@@ -11,4 +12,5 @@
       </div>
     </div>
   <%end%>
+<%= paginate @posts %>
 </div>

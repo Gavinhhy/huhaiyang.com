@@ -13,9 +13,9 @@ gem 'coffee-script-source', '~> 1.8.0'
 
 gem 'jquery-ui-rails'
 gem "ckeditor", github: 'galetahub/ckeditor'
-#gem 'carrierwave'
 gem 'rails_kindeditor'
 gem 'mini_magick'
+gem 'kaminari'
 
 gem 'bcrypt','~> 3.1.7'
 
