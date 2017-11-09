@@ -15,6 +15,10 @@ Rails.application.routes.draw do
 
   resources :posts do
      collection do
+       get :posts_in_2017
+       get :posts_in_2016
+       get :posts_in_2015
+       get :posts_in_2014
      end
   end
 

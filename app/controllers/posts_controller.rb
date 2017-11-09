@@ -1,16 +1,30 @@
 class PostsController < ApplicationController
 
   #简单加密一下，防止被人篡改
-  http_basic_authenticate_with name: "821222837@qq.com", password: "huhaiyang361010", except: [:index, :show]
+  http_basic_authenticate_with name: "821222837@qq.com", password: "huhaiyang361010", except: [:index, :show ,:posts_in_2017 ,:posts_in_2016 ,:posts_in_2015 ,:posts_in_2014 ]
 
   layout 'posts_index'
 
   def index
     #@posts = Post.order('updated_at DESC')
     @posts = Post.order('updated_at DESC').page(params[:page]).per(10)
-
   end
 
+  def posts_in_2017
+    @posts = Post.created_in(2017).order('updated_at DESC').page(params[:page]).per(10)
+  end
+
+  def posts_in_2016
+    @posts = Post.created_in(2016).order('updated_at DESC').page(params[:page]).per(10)
+  end
+
+  def posts_in_2015
+    @posts = Post.created_in(2015).order('updated_at DESC').page(params[:page]).per(10)
+  end
+
+  def posts_in_2014
+    @posts = Post.created_in(2014).order('updated_at DESC').page(params[:page]).per(10)
+  end
   def new
     @post = Post.new
   end
